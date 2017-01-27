@@ -16,15 +16,15 @@ Pizza.prototype.calcCost = function() {
   return price = ((sum + this.size) * (this.quantity))
 }
 
-// var fullMovie = function(movieId) {
-//   var i = movieId - 1;
-//   return  (allMovies[i].movieName + ' ' + allMovies[i].rating + ' ' + allMovies[i].runtime + ' ' + allMovies[i].info);
-// }
+function reset() {
+  location.reload();
+
+}
 
 
 //user interface logic =================================
-$(function() {
-  $('form').submit(function() {
+$(document).ready(function() {
+  $("form").submit(function(event) {
     event.preventDefault();
 
     var myToppings = [];
@@ -39,7 +39,6 @@ $(function() {
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
 
     $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
-    // $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
-    // $('.cost').show();
+    $('.result').show();
   });
 });
