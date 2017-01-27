@@ -31,8 +31,8 @@ $(document).ready(function() {
     });
 
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
-    console.log(myPizza);
-    $('#order').text("You ordered " + myQuantity + " pizzas with " + myToppings);
+
+    $('#order').text("You ordered " + myQuantity + " pizzas with " + myToppings.join(', ') + ".");
     $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     $('.result').show();
   });
