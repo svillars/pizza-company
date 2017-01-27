@@ -11,6 +11,10 @@
   font-size: 30px;
 }
 
+#order {
+  font-size: 16px;
+}
+
 .result {
   display: none;
 }
