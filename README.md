@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is my Pizza Company webpage I did on the fourth Friday of the Intro to Programming class. My objective was to show my understanding of all the concepts learned the fourth week of school. The website asks the user to choose toppings for their pizza and the size they desire. The website will then calculate and inform the user the cost of their pizza._
+_This is my Pizza Company webpage I did on the fourth Friday of the Intro to Programming class. My objective was to show my understanding of all the concepts learned the fourth week of school. The website asks the user to choose toppings for their pizza, the size they desire, and the number of pizzas. The website will then calculate and inform the user the cost of their pizza._
 
 ## Link to site on GitHub Pages
 

@@ -1,5 +1,4 @@
 //Business Logic =========================
-
 function Pizza(toppings, size, quantity) {
   this.toppings = toppings;
   this.size = size;
