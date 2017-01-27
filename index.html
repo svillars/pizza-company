@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Pizza Company</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron row">
+        <div class="">
+          <h1>Pizza Company</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="toppings" >
+            <h3>Select your toppings:</h1>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Extra Cheese</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Sausage</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Hamburger</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Mushrooms</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Onions</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Black Olives</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Green Peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Hot Peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1">Banana Peppers</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <h3>Select the size of your pizza:</h1>
+            <select class="size" name="size">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+              <option value="5">Giant</option>
+            </select><br><br><br><br>
+
+            <h3>Enter number of Pizzas:</h3>
+            <input type="text" id="quantity" value="0">
+
+            <button type="submit" name="button">Go.</button>
+          </form>
+        </div>
+      </div>
+      <div class="row jumbotron result">
+        <h1>Price Info</h1>
+        <div id="cost">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
