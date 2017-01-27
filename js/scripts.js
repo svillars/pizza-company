@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
 
-    $('#order').text("You ordered " + myQuantity + " pizzas with " + myToppings.join(', ') + ".");
+    $('#order').text("You ordered " + myQuantity + " " +  "(" + mySize + "in)" + " pizzas with " + myToppings.join(', ') + ".");
     $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     $('.result').show();
   });

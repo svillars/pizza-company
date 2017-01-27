@@ -25,6 +25,8 @@ The program will allow users to choose the quantity of pizzas.
 
 The program will allow users to choose toppings from a drop down list.
 
+The program will display what was ordered by the user.
+
 The program will calculate and show the user the cost of their order.
 
 ### License
