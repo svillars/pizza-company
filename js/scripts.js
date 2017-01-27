@@ -33,7 +33,7 @@ $(function() {
 
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
 
-    $('#cost').text("The price of your pizza is: "  +  "$ " + mySize);
+    $('#cost').text("The number of your pizzas is: " + myQuantity);
     // $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     // $('.cost').show();
   });
