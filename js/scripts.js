@@ -9,11 +9,11 @@ function Pizza(toppings, size, quantity) {
 
 var price;
 Pizza.prototype.calcCost = function() {
-  if ((this.showtime === 1) || (this.showtime === 2)) {
-    return price = ((8 * this.quantityC) + (8 * this.quantityS) + (8 * this.quantityA));
-  } else {
-    return price = ((8 * this.quantityC) + (8 * this.quantityS) + (12 * this.quantityA));
-  }
+  var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
 }
 
 // var fullMovie = function(movieId) {
@@ -27,13 +27,18 @@ $(function() {
   $('form').submit(function() {
     event.preventDefault();
 
-    var myToppings = parseInt($(".checkbox").val());
+    var myToppings = [];
     var mySize = parseInt($(".size").val());
     var myQuantity = parseInt($("#quantity").val());
 
+    $("input:checkbox:checked").each(function(){
+      var myChoices = $(this).val();
+      myToppings.push(myChoices);
+    });
+
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
 
-    $('#cost').text("The number of your pizzas is: " + myQuantity);
+    $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     // $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     // $('.cost').show();
   });
