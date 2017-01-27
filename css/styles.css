@@ -1,0 +1,24 @@
+.row {
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #4286f4;
+}
+
+#cost {
+  font-size: 30px;
+}
+
+/*.cost {
+  display: none;
+}*/
+
+.container-fluid {
+  background-color: grey;
+}
+
+.col-md-6 {
+  left: 10%;
+}
