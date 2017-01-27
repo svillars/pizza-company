@@ -10,10 +10,10 @@ function Pizza(toppings, size, quantity) {
 var price;
 Pizza.prototype.calcCost = function() {
   var sum = 0;
-    for (var i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
-    return sum;
+  for (var i = 0; i < this.toppings.length; i++) {
+      sum += this.toppings[i];
+  }
+  return price = ((sum + this.size) * (this.quantity))
 }
 
 // var fullMovie = function(movieId) {
@@ -33,7 +33,7 @@ $(function() {
 
     $("input:checkbox:checked").each(function(){
       var myChoices = $(this).val();
-      myToppings.push(myChoices);
+      myToppings.push(parseInt(myChoices));
     });
 
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
