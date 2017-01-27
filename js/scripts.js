@@ -1,5 +1,4 @@
-//business logic =========================
-var allMovies = [];
+//Business Logic =========================
 
 function Pizza(toppings, size, quantity) {
   this.toppings = toppings;
@@ -9,20 +8,15 @@ function Pizza(toppings, size, quantity) {
 
 var price;
 Pizza.prototype.calcCost = function() {
-  var sum = 0;
-  for (var i = 0; i < this.toppings.length; i++) {
-      sum += this.toppings[i];
+  return price = ((this.toppings.length + this.size) * (this.quantity))
   }
-  return price = ((sum + this.size) * (this.quantity))
-}
 
 function reset() {
   location.reload();
-
 }
 
 
-//user interface logic =================================
+//User Interface Logic =================================
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -33,11 +27,11 @@ $(document).ready(function() {
 
     $("input:checkbox:checked").each(function(){
       var myChoices = $(this).val();
-      myToppings.push(parseInt(myChoices));
+      myToppings.push(myChoices);
     });
 
     var myPizza = new Pizza(myToppings, mySize, myQuantity);
-
+    console.log(myPizza);
     $('#cost').text("The price of your pizza is: "  +  "$ " + myPizza.calcCost());
     $('.result').show();
   });
