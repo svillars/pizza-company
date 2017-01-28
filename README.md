@@ -19,7 +19,7 @@ _https://svillars.github.io/pizza-company/_
 
 ## _Specifications_
 
-The program will allow users to choose the size of their pizza
+The program will allow users to choose the size of their pizza.
 
 The program will allow users to choose the quantity of pizzas.
 
